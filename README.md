@@ -32,7 +32,7 @@ My first repository
 |zebra stripes|are neat |$1   |
 #### 代码段
 ···
-  //代码段
+  console.log("代码段");
 ···
 #### 分割线
 ***
