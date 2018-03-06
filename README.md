@@ -31,8 +31,8 @@ My first repository
 |col 2 is |centered     |$12  |
 |zebra stripes|are neat |$1   |
 #### 代码段
-'
+···
   //代码段
-'
+···
 #### 分割线
 ***
