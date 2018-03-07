@@ -81,7 +81,7 @@ event.prenventDefault(); 取消事件的默认动作
 **类比jQuery的```$('.item')```**是返回一个jQuary对象(dom元素的数组)
 本质上jQuery方式和querySelector方式都是获取DOM数组，只不过jQuery会多一些其他成员
 **dom数组的每一个成员注册事件不能像jQuery一样直接注册，需要遍历每个子元素分别注册**
-###h5就是将我们经常需要的操作又包装了一层
+### h5就是将我们经常需要的操作又包装了一层
 
 ***
 
@@ -92,7 +92,13 @@ event.prenventDefault(); 取消事件的默认动作
 3. ```Element.classList.toggle('classAttr',true/false);//切换事件,true为添加、false为删除```
 4. ```ELement.classList.contains('classAttr')//判断当前classlist中有没有classAttr这个属性;```
 
+***
 
+# 访问历史API
+> 在此之前可以使用window.对象实现前进、后退和刷新之类的操作
+1. ```window.history.forword();//前进```
+2. ```window.history.back();//后退```
+3. ```window.history.go();//刷新（可传入url不写是本页面）```
 
 
 
