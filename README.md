@@ -1,3 +1,23 @@
+<h1 align="center">html5--笔记</h1>
+
+***
+
+# 避免变量名污染的方式
+1. html5 自执行函数
+```
+(function(){
+...
+})();
+```
+2. jQuary $
+```
+$(function(){
+...
+});
+```
+
+***
+
 # input-type类型：
 * button(单机按钮)
 * checkbox(复选框)
@@ -35,10 +55,11 @@
 (search 类型用于搜索域，比如站点搜索或 Google 搜索。search 域显示为常规的文本域。)
 
 ***
+
 #.dataset[] 获取自定义数据集
 event.prenventDefault(); 取消事件的默认动作
-***
 
+***
 
 # SVG
 ## Scalable Vector Graphics 可缩放矢量图形
@@ -49,6 +70,7 @@ event.prenventDefault(); 取消事件的默认动作
 	3. ```<embed src="demo.svg" type=""></embed>```
 2. 直接把svg代码复制进html中
 
+***
 
 # html5 新选择器
 1. 返回第一个满足选择器条件的元素，一个dom对象
@@ -61,11 +83,13 @@ event.prenventDefault(); 取消事件的默认动作
 **dom数组的每一个成员注册事件不能像jQuery一样直接注册，需要遍历每个子元素分别注册**
 ###h5就是将我们经常需要的操作又包装了一层
 
+***
+
 # Element.classList
 ## 输出Element拥有的class的数组
 1. ```Element.classList.add('classAttr');//添加类```
 2. ```Element.classList.remove('classAttr');//移除类```
-3. ```Element.classList.toggle('classAttr');//切换事件```
+3. ```Element.classList.toggle('classAttr',true/false);//切换事件,true为添加、false为删除```
 4. ```ELement.classList.contains('classAttr')//判断当前classlist中有没有classAttr这个属性;```
 
 
