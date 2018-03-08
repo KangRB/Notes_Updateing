@@ -84,6 +84,15 @@ event.prenventDefault(); 取消事件的默认动作
 ### h5就是将我们经常需要的操作又包装了一层
 
 ***
+# 添加事件监听
+```
+element.addEventListener('click',function(e){
+  ...
+  e.perventDefault();//阻止默认事件
+});
+```
+
+***
 
 # Element.classList
 ## 输出Element拥有的class的数组
@@ -121,11 +130,25 @@ fi(elememt.webkitRequestFullScreen){
 else if(element.mozRequestFullScreen){
   element.mozRequestFullScreen();
 }
+// 标准函数：
 else if(element.requestFullScreen){
   element.reuqestFullScreen();
 }
 ```
 
+***
+
+# css/js注入内容
+## css使用::before  ::after伪类注入（before是元素开始的时候，在元素内部）
+```
+body::before{
+  content: 'css注入的内容';
+}
+```
+## js
+```
+document.write("js注入的内容");
+```
 
 
 
