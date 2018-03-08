@@ -95,12 +95,36 @@ event.prenventDefault(); 取消事件的默认动作
 ***
 
 # 访问历史API
-> 在此之前可以使用window.对象实现前进、后退和刷新之类的操作
+### 在此之前可以使用window.对象实现前进、后退和刷新之类的操作
+### 标准键值?key=val
 1. ```window.history.forword();//前进```
 2. ```window.history.back();//后退```
 3. ```window.history.go();//刷新（可传入url不写是本页面）```
+4. 新加入的API```window.history.pushState(state,title,url);//url='?+t'+title```
+```
+//当我们在伪造访问历史记录的前进或后退时会执行一个popstate事件
+window.addEventListener('popstate',function(e){
+  //e.state = title;
+});
+//第一次请求过来，获取地址栏中的t参数
+var title = window.location.search.split('=')[1];
+title = decodeURI(title);//decodeURI作用是将URL编码转换到之前的状态
+```
+***
 
-
+# 全屏API
+```
+var element = 需要全屏的元素;
+fi(elememt.webkitRequestFullScreen){
+  element.webkitRequestFullScreen();
+}
+else if(element.mozRequestFullScreen){
+  element.mozRequestFullScreen();
+}
+else if(element.requestFullScreen){
+  element.reuqestFullScreen();
+}
+```
 
 
 
