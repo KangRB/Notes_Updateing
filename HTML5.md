@@ -149,7 +149,25 @@ body::before{
 ```
 document.write("js注入的内容");
 ```
+***
 
+# 应用缓存
+```
+<html lang="en" manifest="cache.manifest">
+```
+需要创建一个cache.manifest文件
+```
+CACHE MANIFEST
+# version 1.0.0
+
+CACHE:			//缓存的文件 
+  index.html
+  script.js
+  style.css
+				//这一行有一个Tab缩进
+NETWORK:		//联网状态下可访问的文件
+  *
+```
 
 
 
