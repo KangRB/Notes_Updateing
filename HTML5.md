@@ -194,6 +194,7 @@ btnSet.addEventListener('click',function(){
 ***
 
 <p id="a1"></p>
+
 # 文件API
 ### 提供客户端本地操作文件的可能
 
