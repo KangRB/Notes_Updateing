@@ -1,6 +1,6 @@
 <h1 align="center">html5--笔记</h1>
 
-[文件API](#文件API)
+## [文件API](#文件API)
 
 ***
 
