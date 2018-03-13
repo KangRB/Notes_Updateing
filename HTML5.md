@@ -31,6 +31,7 @@ $(function(){
 });
 ```
 <h3 align="right"><a href="#user-content-html5--笔记">返回目录</a></h3>
+
 ***
 
 # input-type类型
@@ -68,6 +69,8 @@ $(function(){
 
 ### search
 (search 类型用于搜索域，比如站点搜索或 Google 搜索。search 域显示为常规的文本域。)
+<h3 align="right"><a href="#user-content-html5--笔记">返回目录</a></h3>
+
 
 ***
 
@@ -84,6 +87,8 @@ event.prenventDefault(); 取消事件的默认动作
 	2. ```<object data="demo.svg" type=""></object>```
 	3. ```<embed src="demo.svg" type=""></embed>```
 2. 直接把svg代码复制进html中
+<h3 align="right"><a href="#user-content-html5--笔记">返回目录</a></h3>
+
 
 ***
 
@@ -97,6 +102,8 @@ event.prenventDefault(); 取消事件的默认动作
 本质上jQuery方式和querySelector方式都是获取DOM数组，只不过jQuery会多一些其他成员
 **dom数组的每一个成员注册事件不能像jQuery一样直接注册，需要遍历每个子元素分别注册**
 ### h5就是将我们经常需要的操作又包装了一层
+<h3 align="right"><a href="#user-content-html5--笔记">返回目录</a></h3>
+
 
 ***
 # 添加事件监听
@@ -115,6 +122,8 @@ element.addEventListener('click',function(e){
 2. ```Element.classList.remove('classAttr');//移除类```
 3. ```Element.classList.toggle('classAttr',true/false);//切换事件,true为添加、false为删除```
 4. ```ELement.classList.contains('classAttr')//判断当前classlist中有没有classAttr这个属性;```
+<h3 align="right"><a href="#user-content-html5--笔记">返回目录</a></h3>
+
 
 ***
 
@@ -134,6 +143,9 @@ window.addEventListener('popstate',function(e){
 var title = window.location.search.split('=')[1];
 title = decodeURI(title);//decodeURI作用是将URL编码转换到之前的状态
 ```
+<h3 align="right"><a href="#user-content-html5--笔记">返回目录</a></h3>
+
+
 ***
 
 # 全屏API
@@ -150,6 +162,8 @@ else if(element.requestFullScreen){
   element.reuqestFullScreen();
 }
 ```
+<h3 align="right"><a href="#user-content-html5--笔记">返回目录</a></h3>
+
 
 ***
 
@@ -164,6 +178,8 @@ body::before{
 ```
 document.write("js注入的内容");
 ```
+<h3 align="right"><a href="#user-content-html5--笔记">返回目录</a></h3>
+
 
 ***
 
@@ -184,6 +200,8 @@ CACHE:			//缓存的文件
 NETWORK:		//联网状态下可访问的文件
   *
 ```
+<h3 align="right"><a href="#user-content-html5--笔记">返回目录</a></h3>
+
 
 ***
 
@@ -203,6 +221,8 @@ btnSet.addEventListener('click',function(){
   localStorage['key1'] = txtValue.value;
 });
 ```
+<h3 align="right"><a href="#user-content-html5--笔记">返回目录</a></h3>
+
 
 ***
 
@@ -215,6 +235,8 @@ btnSet.addEventListener('click',function(){
   <input type="file" name="input_file" id="input_file" multiple>//multiple可多选文件
 </form>
 ```
+<h3 align="right"><a href="#user-content-html5--笔记">返回目录</a></h3>
+
 
 
 
