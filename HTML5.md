@@ -1,7 +1,7 @@
 <h1 align="center">html5--笔记</h1>
 
-1. 变量名污染的方式](#user-content-避免变量名污染的方式)
-2. API](#user-content-文件api)
+1. [避免变量名污染的方式](#user-content-避免变量名污染的方式)
+2. [文件API](#user-content-文件api)
 
 ***
 
