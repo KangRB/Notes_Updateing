@@ -1,10 +1,15 @@
 <h1 align="center">html5--笔记</h1>
 
-## [文件API](#文件API)
+[避免变量名污染的方式](#user-content-避免变量名污染的方式-)
+
+[文件API](#文件API)
 
 ***
 
 # 避免变量名污染的方式
+
+<p id=""></p>
+
 1. html5 自执行函数
 ```
 (function(){
@@ -21,6 +26,10 @@ $(function(){
 ***
 
 # input-type类型：
+
+<p id=""></p>
+
+
 * button(单机按钮)
 * checkbox(复选框)
 * file(文件上传)
@@ -58,12 +67,19 @@ $(function(){
 
 ***
 
-#.dataset[] 获取自定义数据集
+# .dataset[] 获取自定义数据集
+
+<p id=""></p>
+
 event.prenventDefault(); 取消事件的默认动作
 
 ***
 
 # SVG
+
+<p id=""></p>
+
+
 ## Scalable Vector Graphics 可缩放矢量图形
 ### 优势：体积小，质量高，效果好，可控程度高
 1. 以文件方式载入方式：
