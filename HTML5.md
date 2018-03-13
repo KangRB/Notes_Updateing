@@ -1,5 +1,7 @@
 <h1 align="center">html5--笔记</h1>
 
+# 文件API
+
 ***
 
 # 避免变量名污染的方式
@@ -149,6 +151,7 @@ body::before{
 ```
 document.write("js注入的内容");
 ```
+
 ***
 
 # 应用缓存
@@ -164,11 +167,41 @@ CACHE:			//缓存的文件
   index.html
   script.js
   style.css
-				//这一行有一个Tab缩进
+			//这一行有一个Tab缩进
 NETWORK:		//联网状态下可访问的文件
   *
 ```
 
+***
+
+# Web Storage 网页存储
+## localStorage本地存储    sessionStorage会话存储
+
+```
+var btnSet = document.querySelector('#btn_set');
+var btnGet = document.querySelector('#btn_get');
+var txtValue = document.querySelector('#txt_value');
+btnGet.addEventListener('click',function(){
+  if(window.localStorage)
+    //txtValue.value = localStorage.getItem('key1');获取一个不存在的键，返回空字符串
+    txtValue.value = localStorage['key1'];//获取一个不存在的键，返回undefined
+});
+btnSet.addEventListener('click',function(){
+  localStorage['key1'] = txtValue.value;
+});
+```
+
+***
+
+# 文件API
+### 提供客户端本地操作文件的可能
+
+> 对于表单里的input来说：可以直接通过name找到元素//document.form[0].input_file 
 
 
 
+
+
+
+
+ 
