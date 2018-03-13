@@ -210,9 +210,6 @@ btnSet.addEventListener('click',function(){
 ***
 
 # 文件API
-
-<p id="文件API"></p>
-
 ### 提供客户端本地操作文件的可能
 
 > 对于表单里的input来说：可以直接通过name找到元素//document.form[0].input_file 
