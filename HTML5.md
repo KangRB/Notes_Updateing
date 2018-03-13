@@ -2,8 +2,18 @@
 
 ## 目录
 1. [避免变量名污染的方式](#user-content-避免变量名污染的方式)
-2. [input-type类型](#user-contetn-input-type类型)
-2. [文件API](#user-content-文件api)
+2. [input-type类型](#user-content-input-type类型)
+3. [.dataset[] 获取自定义数据集](#user-content-dataset-获取自定义数据集)
+4. [SVG](#user-content-svg)
+5. [html5 新选择器](#user-content-html5-新选择器)
+6. [添加事件监听](#user-content-添加事件监听)
+7. [Element.classList](#user-content-elementclasslist)
+8. [访问历史API](#user-content-访问历史api)
+9. [全屏API](#user-content-全屏api)
+10. [css/js注入内容](#user-content-cssjs注入内容)
+11. [应用缓存](#user-content-应用缓存)
+12. [Web Storage 网页存储](#user-content-web-storage-网页存储)
+13. [文件API](#user-content-文件api)
 
 ***
 
@@ -23,7 +33,7 @@ $(function(){
 
 ***
 
-# input-type类型：
+# input-type类型
 * button(单机按钮)
 * checkbox(复选框)
 * file(文件上传)
