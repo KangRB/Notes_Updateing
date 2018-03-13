@@ -76,6 +76,8 @@ $(function(){
 
 # .dataset[] 获取自定义数据集
 event.prenventDefault(); 取消事件的默认动作
+<h3 align="right"><a href="#user-content-html5--笔记">返回目录</a></h3>
+
 
 ***
 
@@ -113,6 +115,8 @@ element.addEventListener('click',function(e){
   e.perventDefault();//阻止默认事件
 });
 ```
+<h3 align="right"><a href="#user-content-html5--笔记">返回目录</a></h3>
+
 
 ***
 
