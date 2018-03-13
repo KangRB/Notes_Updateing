@@ -1,6 +1,6 @@
 <h1 align="center">html5--笔记</h1>
 
-# 文件API
+[文件API](#a1)
 
 ***
 
@@ -193,8 +193,8 @@ btnSet.addEventListener('click',function(){
 
 ***
 
+<p id="a1"></p>
 # 文件API
-<p id="文件API"></p>
 ### 提供客户端本地操作文件的可能
 
 > 对于表单里的input来说：可以直接通过name找到元素//document.form[0].input_file 
