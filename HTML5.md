@@ -241,9 +241,54 @@ btnSet.addEventListener('click',function(){
 ```
 <h3 align="right"><a href="#user-content-html5--笔记">返回目录</a></h3>
 
-
-
-
+# 拖拽操作
+### drag&drop  拖&放
+```
+var target = document.querySelector('#target');//找到拖拽目标框
+target.addEventListener('dragenter',function(){
+  //添加拖拽进去事件
+});
+target.addEventListener('dragleave',function(){
+  //添加拖拽离开事件
+});
+target.addEventListener('dragover',function(e){
+  //如果想要捕获drop事件，就一定要在该事件中阻止默认事件
+  e.preventDefault();
+  e.stopPropagation();//阻止事件冒泡
+});
+target.addEventListener('drop',function(e){
+  //把元素放在该对象中
+  if(e.dataTransfer.files.length){
+  //拖拽文件
+    var files = e.dataTansfer.files;
+    for(var i = 0;i < files.length;i++){
+      var li = document.createElement('li');
+      li.setAttribute('class','list-group-item')
+      li.innerHTML = '<h5 class="list-group-item-heading">'
+        + files[i].name + '</h5><p class="list-group-item-text">'
+	+ files[i].lastModifiedDate.toLocaleDateString() + ' ' 
+	+ files[i].lastModifiedDate.toLocaleTimeString() + ' '
+	+ (files[i].size / 1024).toFixed(2) + 'KB</p>';
+      fileList.appendChild(li);
+    }
+  }else{
+    //var data = e.dataTransfer.getData('text/plain') || e.dataTransfer.getData('text/uri-list');//短路运算
+    var data = e.dataTransfer.getData('text/plain');
+    if(data){
+      //拖入的是文本
+      target.innerHTML = data;
+    }else{
+      //拖入的是图片
+      var img = document.createElement('img');
+      img.src = e.dataTransfer.getData('text/uri-list');
+    
+      e.preventDefault();
+      e.stopPropagation();
+    }
+  }
+});
+```
+<h3 align="right"><a href="#user-content-html5--笔记">返回目录</a></h3>
 
 
 
