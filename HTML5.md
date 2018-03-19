@@ -14,7 +14,7 @@
 11. [应用缓存](#user-content-应用缓存)
 12. [Web Storage 网页存储](#user-content-web-storage-网页存储)
 13. [文件API](#user-content-文件api)
-
+14. [拖拽操作](#user-content-拖拽操作)
 ***
 
 # 避免变量名污染的方式
