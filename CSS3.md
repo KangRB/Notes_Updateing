@@ -4,6 +4,8 @@
 1. [属性选择器](#user-content-属性选择器)
 2. [伪类选择器](#user-content-伪类选择器)
 3. [颜色](#user-content-颜色)
+4. [文字](#user-content-文字)
+5. [边框圆角](#user-content-边框圆角)
 
 ***
 
@@ -64,6 +66,7 @@ color	可选。阴影的颜色。参阅 CSS 颜色值
 ***
 
 # 边框圆角
+### 做重合圆环时，第二个圆环的位置需绝对定位，left top值需设置成圆环border-width的值得负数，以便完美重合
 + **border-radius** 可分别设置长、短半径，以“/”进行分隔，遵循“1，2，3，4”规则
 + **border-color** 4个值也可以分别设置
 + 表格运用圆角需要**border-collapse:separate**
