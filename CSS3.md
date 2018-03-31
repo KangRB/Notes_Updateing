@@ -9,6 +9,8 @@
 6. [边框阴影](#user-content-边框阴影)
 7. [背景](#user-content-背景)
 8. [Flex布局](#user-content-flex布局)
+9. [过度](#user-content-过度)
+10. [动画](#user-content-动画)
 
 ***
 
@@ -311,7 +313,7 @@ color	可选。阴影的颜色。参阅 CSS 颜色值
 
 ***
 
-# 过度动画
+# 过渡
 ### transition: property duration timing-function delay
 + transition-property //规定设置过度效果的CSS属性的名称
 + transition-duration //规定完成过度效果需要多少秒或毫秒
@@ -323,3 +325,32 @@ color	可选。阴影的颜色。参阅 CSS 颜色值
     5. ease-in-out 规定以慢速开始和结束的过渡效果（等于 cubic-bezier(0.42,0,0.58,1)）
     6. cubic-bezier(n,n,n,n) 在 cubic-bezier 函数中定义自己的值。可能的值是 0 至 1 之间的数值
 + transition-delay //定义过度效果何时开始
+
+<h3 align="right"><a href="#user-content-css3--笔记">返回目录</a></h3>
+
+***
+
+# 动画
++ animation-name: // 动画名称
++ animation-duration: // 动画持续时间
++ animation-play-state: // 动画状态
++ animation-iteration-count: // 动画播放次数
++ animation-fill-mode: // 动画终止时的状态
++ animation-direction: //动画执行的顺序
++ animation-timing-function: // 动画过度曲线
++ animation-delay: // 动画延时
+
+```
+/*动画序列*/
+@keyframes change//名字{
+  0%{
+
+  }
+  50%{
+
+  }
+  100%{
+
+  }
+}
+```
