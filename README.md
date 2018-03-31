@@ -1,4 +1,4 @@
-<h1 align="center">[html5--笔记](/HTML5.md)</h1>
+<h1 align="center"><a src="./HTML5.md">html5--笔记</a></h1>
 
 ***
 # 避免变量名污染的方式
