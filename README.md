@@ -1,4 +1,4 @@
-<h1 align="center"><a src="./HTML5.md">html5--笔记</a></h1>
+<h1 align="center"><a href="./HTML5.md">html5--笔记</a></h1>
 
 ***
 # 避免变量名污染的方式
@@ -16,7 +16,7 @@
 # 拖拽操作
 ***
 
-<h1 align="center">[css3--笔记](/CSS3.md)</h1>
+<h1 align="center"><a href="CSS3.md">css3--笔记</a></h1>
 # 属性选择器
 # 伪类选择器
 # 颜色
