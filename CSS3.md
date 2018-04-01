@@ -11,6 +11,7 @@
 8. [Flex布局](#user-content-flex布局)
 9. [过度](#user-content-过度)
 10. [动画](#user-content-动画)
+11. [判断鼠标进入容器方向](#user-content-判断鼠标进入容器方向)
 
 ***
 
@@ -353,4 +354,30 @@ color	可选。阴影的颜色。参阅 CSS 颜色值
 
   }
 }
+```
+
+<h3 align="right"><a href="#user-content-css3--笔记">返回目录</a></h3>
+
+***
+
+# 判断鼠标进入容器方向
+
+```
+$("div").on("mouseenter mouseleave",function(e) {
+     var w = $(this).width(); // 得到盒子宽度
+     var h = $(this).height();// 得到盒子高度
+     var x = (e.pageX - this.offsetLeft - (w / 2)) * (w > h ? (h / w) : 1);
+     // 获取x值
+     var y = (e.pageY - this.offsetTop - (h / 2)) * (h > w ? (w / h) : 1);
+     // 获取y值
+     var direction = Math.round((((Math.atan2(y, x) * (180 / Math.PI)) + 180) / 90) + 3) % 4; //direction的值为“0,1,2,3”分别对应着“上，右，下，左”
+     // 将点的坐标对应的弧度值换算成角度度数值
+     var dirName = new Array('上方','右侧','下方','左侧');
+     if(e.type == 'mouseenter'){
+         $(this).html(dirName[direction]+'进入');
+     }else{
+         $(this).html(dirName[direction]+'离开');
+     }
+});
+
 ```
