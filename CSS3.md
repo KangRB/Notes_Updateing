@@ -331,6 +331,24 @@ color	可选。阴影的颜色。参阅 CSS 颜色值
 
 ***
 
+# 旋转
++ transform: rotate; // 2D旋转
++ transform: rotateX/rotatrY/rotateZ; // 3D旋转
++ **可以配合 perspective: 100px; 使用**
+    1. perspective-origin: 50% 50%; //默认
+    2. 当为元素定义perspective属性时，**其子元素会获得透视效果**，而不是元素本身。
+    3. 属性只影响3D转换元素
+    4. 取值为none或不设置，就没有真3D空间
+    5. 取值越小，3D效果就越明显
+    6. 值无穷大，或值为0时与取值为none效果一样
++ **transform-style:** flat(平面的)/preserve-3d(表示所有子元素在3D空间中呈现)/preserve(保持原状)
++ transform: scale(1,1); // 括号里填倍数 2D缩放
++ transform: scaleX/Y/Z(1) //3D缩放
+
+<h3 align="right"><a href="#user-content-css3--笔记">返回目录</a></h3>
+
+***
+
 # 动画
 + animation-name: // 动画名称
 + animation-duration: // 动画持续时间
