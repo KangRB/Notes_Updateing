@@ -107,8 +107,6 @@ color	可选。阴影的颜色。参阅 CSS 颜色值
 
 # 背景
 + background-clip: content-box;//默认的背景填充区域，只填充内容
-
-
 + background-clip: padding-box;//从padding处开始填充背景
 + background-clip: border-box;//从border处开始填充背景
 + background-origin: content-box;//背景填充定位原点
