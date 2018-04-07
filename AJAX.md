@@ -67,7 +67,7 @@ var username = document.querySelector('#username').value;
 var password = document.querySelector('#password').value;
 
 //第二步：准备发送请求-配置发送请求的一些行为
-url = 'demo.php?username='+username+'&password'+password;
+url = 'demo.php?username='+username+'&password='+password;
 xhr.open('get',url,true);
 //第一个参数表示用什么方式发送请求，第二个参数表示往哪儿发送请求，第三个参数表示同步(false)还是异步(true默认)
 
