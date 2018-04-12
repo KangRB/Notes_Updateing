@@ -1,8 +1,9 @@
 <h1 align="center">AJAX--笔记</h1>
+## Asynchronous Javascript And Xml
 
 # 目录
-1. [回调函数](#user-content-回调函数)
-2. [服务器常用状态码及其含义](#user-content-服务器常用状态码及其含义)
+1. [服务器常用状态码及其含义](#user-content-服务器常用状态码及其含义)
+2. [回调函数](#user-content-回调函数)
 
 ***
 
@@ -58,7 +59,7 @@
 ```
 //第一步：创建xhr对象
 var xhr = null;
-if(window.XMLHttpRequest){//标准浏览器
+if(window.XMLHttpRequest){//标准浏览 器
   xhr = new XMLHttpRequest();
 }else{
   xhr = new ActiveXObject('Microsoft.XMLHTTP');
@@ -100,9 +101,58 @@ demo.php
 + 3：服务器已经返回了数据
 + 4：服务器返回的数据已经可以使用
 
-
-
-
 <h3 align="right"><a href="#user-content-AJAX--笔记">返回目录</a></h3>
 
 ***
+
+# JSON
+>JSON实际上是JavaScript的一个子集，所以JSON的数据格式和JavaScript是对应的
+```
+number  => JS number
+boolean => JS boolean
+string  => JS string
+null    => JS null
+array   => JS Array 的表达方式[]
+object  => JS Object {}表达式
+```
++ JSON规定字符集是UTF-8，字符串必须用""，Object的键也必须使用""
++ 数组或对象的最后一个成员，不能加 , 逗号
+
+### JS内置的两个JSON方法
+1. JSON.stringify({},[],""); //json对象转换为json字符串
+    1. 参数1：要序列化的数据（object格式）
+    2. 参数2：控制对象的键值，只想输出指定的属性，传入一个数组
+    3. 参数3：序列化后，打印输出的格式（一个Tab，可以更直观查看json）
+>任何吧JavaScript变成Json，就是把这个对象序列化为Json字符串，然后才可以通过网络传递
+
+2. JSON.parst(json.data); //传入的是json字符串
+>如果收到了一个JSON格式的字符串，只需要把它反序列化为一个JavaScript对象，就可以在JavaScript中直接使用这个对象了
+
+### 实例
+1. 数组方式[]
+```
+[{"id" : 1,
+"name" : "name1"
+},{
+"id" : 2,
+"name" : "name2"
+}]
+```
+2. 字符串方式''
+```
+'{{"id" : 1,"name" : "name1"},{"id" : 2,"name" : "name2"}}'
+```
+3. 对象方式{}
+```
+{
+  "status" : 0,      //执行状态码
+  "msg" : "SUCCESS", //说明文字信息，没有为NULL
+  "data" : [{        //对象中嵌套数组，数组是返回数据  
+    "id" : 1,
+    "name" : "name1"
+    },{
+    "id" : 2,
+    "name" : "name2"
+    }]
+}
+```
