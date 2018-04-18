@@ -130,7 +130,7 @@ object  => JS Object {}表达式
 
 ### 实例
 1. 数组方式[]
-```
+```js
 [{"id" : 1,
 "name" : "name1"
 },{
@@ -139,11 +139,11 @@ object  => JS Object {}表达式
 }]
 ```
 2. 字符串方式''
-```
+```js
 '{{"id" : 1,"name" : "name1"},{"id" : 2,"name" : "name2"}}'
 ```
 3. 对象方式{}
-```
+```js
 {
   "status" : 0,      //执行状态码
   "msg" : "SUCCESS", //说明文字信息，没有为NULL
