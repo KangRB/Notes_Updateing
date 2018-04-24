@@ -156,3 +156,24 @@ object  => JS Object {}表达式
     }]
 }
 ```
+
+<h3 align="right"><a href="#user-content-AJAX--笔记">返回目录</a></h3>
+
+***
+
+# jQuery的AJAX语法
+```js
+$.ajax({
+  type:'',//POST | GET 默认值为GET
+  url:'',//请求的地址 ，默认值为当前页地址
+  dataType:'',//xml,html,script,json,jsonp,text
+  jsonp:"_jsonp",//传递给请求处理程序或页面的，可以获得jsonp回调函数名的参数名(默认为callback)
+  jsonCallback:"",//自定义的json回调函数名称，默认为jQuery自动生成的随机函数名
+  success:function(data){
+    //请求成功后的回调函数
+  },
+  error:function(e){
+    //请求失败时的回调函数
+  }
+});
+```
